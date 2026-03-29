@@ -92,7 +92,7 @@
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
 
     <!-- Header / Navigation -->
-    <header class="fixed w-full top-0 z-50 glass-effect border-b border-gray-200 dark:border-gray-700 shadow-sm">
+    <header class="fixed w-full top-0 z-40 glass-effect border-b border-gray-200 dark:border-gray-700 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <button type="button" id="menuBtn" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none" aria-label="Mở menu" aria-expanded="false">
@@ -141,9 +141,36 @@
         </nav>
     </aside>
 
+    <!-- Ultra Mini App: Quick Call (Left Side) -->
+    <div class="fixed bottom-6 left-6 z-50 flex flex-col-reverse items-center gap-3">
+        <!-- Main Toggle Button -->
+        <button id="quickCallBtn" class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300" aria-label="Mở menu liên hệ nhanh">
+            <i class="fas fa-headset transition-transform duration-300"></i>
+        </button>
+
+        <!-- Expanded Menu -->
+        <div id="quickCallMenu" class="flex flex-col gap-3 opacity-0 translate-y-10 pointer-events-none transition-all duration-300 origin-bottom">
+            <!-- Map Link -->
+            <a href="https://share.google/2vIqj3FunzKHvpQJf" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-blue-600 transition-transform transform hover:scale-110 relative group" aria-label="Bản đồ">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="absolute left-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Bản đồ</span>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/84812050090" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-green-600 transition-transform transform hover:scale-110 relative group" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span class="absolute left-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">WhatsApp</span>
+            </a>
+            <!-- Phone Call -->
+            <a href="tel:0812050090" class="w-12 h-12 bg-red-500 text-white rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-red-600 transition-transform transform hover:scale-110 relative group" aria-label="Gọi điện">
+                <i class="fas fa-phone-alt"></i>
+                <span class="absolute left-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Gọi điện</span>
+            </a>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main class="pt-16">
-        <!-- Hero Section (Layout preserved, H1 changed) -->
+        <!-- Hero Section -->
         <section id="hero" class="relative bg-white dark:bg-gray-900 overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Cho thuê xe máy Hà Nội" class="w-full h-full object-cover opacity-20 dark:opacity-10">
@@ -358,7 +385,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer (Cập nhật danh sách 10 link tương ứng Menu) -->
     <footer class="bg-gray-900 text-white pt-12 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -372,12 +399,20 @@
                         <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-zalo text-xl"></i></a>
                     </div>
                 </div>
+                <!-- Cột 10 Links chia làm 2 -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Liên kết nhanh</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#hero" class="text-gray-400 hover:text-white transition">Trang chủ</a></li>
-                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Bảng giá thuê xe</a></li>
-                        <li><a href="#procedures" class="text-gray-400 hover:text-white transition">Thủ tục & Hợp đồng</a></li>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li><a href="#hero" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Trang chủ</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Giới thiệu</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Bảng giá</a></li>
+                        <li><a href="#fleet" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Dòng xe</a></li>
+                        <li><a href="#procedures" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Thủ tục</a></li>
+                        <li><a href="#advantages" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Ưu điểm</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Kinh nghiệm</a></li>
+                        <li><a href="#destinations" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Địa điểm</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Đánh giá</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Liên hệ</a></li>
                     </ul>
                 </div>
                 <div>
@@ -404,7 +439,7 @@
         </div>
     </footer>
 
-    <!-- Core Scripts (Layout Logic Preserved & Secured) -->
+    <!-- Core Scripts -->
     <script>
         // 1. Calculator Logic (Sanitized & Safe)
         function formatMoney(amount) {
@@ -422,14 +457,13 @@
                 const days = parseInt(daysInput.value);
                 
                 if (isNaN(pricePerDay) || isNaN(days) || days < 1) {
-                    // Security: Use textContent instead of innerHTML, or DOMPurify if HTML is needed
                     priceSpan.textContent = "Vui lòng nhập số ngày hợp lệ";
                     return;
                 }
                 
                 const total = pricePerDay * days;
                 
-                // Security: Sanitizing output just in case, though formatMoney returns safe string
+                // Security: Sanitizing output just in case
                 const safeTotal = DOMPurify.sanitize(formatMoney(total));
                 priceSpan.innerHTML = safeTotal;
             } catch (e) {
@@ -453,9 +487,8 @@
             overlay.classList.remove('hidden');
             setTimeout(() => overlay.classList.remove('opacity-0'), 10);
             menuBtn.setAttribute('aria-expanded', 'true');
-            // Focus trap setting: focus first link
             if(sidebarNavLinks.length > 0) sidebarNavLinks[0].focus();
-            document.body.style.overflow = 'hidden'; // Prevent background scroll
+            document.body.style.overflow = 'hidden'; 
         }
 
         function closeMenu() {
@@ -463,7 +496,7 @@
             overlay.classList.add('opacity-0');
             setTimeout(() => overlay.classList.add('hidden'), 300);
             menuBtn.setAttribute('aria-expanded', 'false');
-            menuBtn.focus(); // Return focus to button
+            menuBtn.focus(); 
             document.body.style.overflow = '';
         }
 
@@ -483,15 +516,14 @@
             }
         });
 
-        // 3. Theme UI Toggle Logic (Chuẩn hóa logic icon)
+        // 3. Theme UI Toggle Logic
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const htmlClass = document.documentElement.classList;
 
-        // Init theme from localStorage or system preference
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             htmlClass.add('dark');
-            themeIcon.className = 'fas fa-sun text-xl text-yellow-400'; // Shows what it changes TO or current state indicator
+            themeIcon.className = 'fas fa-sun text-xl text-yellow-400'; 
         } else {
             htmlClass.remove('dark');
             themeIcon.className = 'fas fa-moon text-xl text-gray-600';
@@ -501,24 +533,58 @@
             if (htmlClass.contains('dark')) {
                 htmlClass.remove('dark');
                 localStorage.theme = 'light';
-                // Đang sáng -> Hiện icon mặt trăng (báo hiệu bấm vào sẽ thành dark)
                 themeIcon.className = 'fas fa-moon text-xl text-gray-600';
             } else {
                 htmlClass.add('dark');
                 localStorage.theme = 'dark';
-                // Đang tối -> Hiện icon mặt trời
                 themeIcon.className = 'fas fa-sun text-xl text-yellow-400';
             }
         });
 
-        // 4. Form Security Setup (Basic)
+        // 4. Form Security Setup
         document.getElementById('calcForm').addEventListener('submit', function(e){
             e.preventDefault();
-            // Check honeypot
             if(this.honeypot.value !== '') {
-                return false; // Spam detected
+                return false; 
             }
             calculatePrice();
+        });
+
+        // 5. Quick Call (Ultra Mini App) Logic
+        const quickCallBtn = document.getElementById('quickCallBtn');
+        const quickCallMenu = document.getElementById('quickCallMenu');
+        let isQuickCallOpen = false;
+
+        quickCallBtn.addEventListener('click', () => {
+            isQuickCallOpen = !isQuickCallOpen;
+            const icon = quickCallBtn.querySelector('i');
+
+            if (isQuickCallOpen) {
+                // Mở menu
+                quickCallMenu.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                quickCallMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                
+                // Đổi nút thành dấu X (đóng)
+                icon.className = 'fas fa-times transition-transform duration-300 transform rotate-90';
+                quickCallBtn.classList.replace('bg-primary', 'bg-gray-700');
+                quickCallBtn.classList.replace('hover:bg-blue-700', 'hover:bg-gray-800');
+            } else {
+                // Đóng menu
+                quickCallMenu.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                quickCallMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                
+                // Đổi lại icon mặc định
+                icon.className = 'fas fa-headset transition-transform duration-300 transform rotate-0';
+                quickCallBtn.classList.replace('bg-gray-700', 'bg-primary');
+                quickCallBtn.classList.replace('hover:bg-gray-800', 'hover:bg-blue-700');
+            }
+        });
+
+        // Đóng Quick Call khi bấm ra ngoài
+        document.addEventListener('click', (e) => {
+            if (isQuickCallOpen && !quickCallBtn.contains(e.target) && !quickCallMenu.contains(e.target)) {
+                quickCallBtn.click();
+            }
         });
     </script>
 
