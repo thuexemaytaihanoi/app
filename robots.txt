@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://thuexemaytaihanoi.github.io/app/sitemap.xml
