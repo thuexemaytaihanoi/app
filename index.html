@@ -40,6 +40,42 @@
         }
     </script>
 
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRental",
+      "name": "Cho thuê xe máy Hà Nội - Tân Tân",
+      "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "@id": "https://thuexemaytaihanoi.github.io/app/",
+      "url": "https://thuexemaytaihanoi.github.io/app/",
+      "telephone": "0812050090",
+      "email": "lannguyen1102vn@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Ngõ 9 Thanh Niên, Quán Thánh",
+        "addressLocality": "Ba Đình",
+        "addressRegion": "Hà Nội",
+        "postalCode": "100000",
+        "addressCountry": "VN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.0449,
+        "longitude": 105.8368
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "priceRange": "150000VND - 200000VND"
+    }
+    </script>
+
     <style>
         html { scroll-behavior: smooth; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -101,7 +137,7 @@
         <!-- Scrollable Content -->
         <div class="flex-1 overflow-y-auto p-4 flex flex-col gap-4 custom-scrollbar">
             
-            <!-- Opening Hours Widget (Ultra Logic) -->
+            <!-- Opening Hours Widget -->
             <div class="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-4 border border-blue-100 dark:border-blue-800/30">
                 <div class="flex justify-between items-start mb-2">
                     <div class="flex items-center gap-2 text-blue-800 dark:text-blue-300 font-semibold text-sm">
@@ -149,7 +185,7 @@
             <i class="fas fa-headset transition-transform duration-300"></i>
         </button>
         <div id="quickCallMenu" class="flex flex-col gap-3 opacity-0 translate-y-10 pointer-events-none transition-all duration-300 origin-bottom">
-            <a href="https://share.google/2vIqj3FunzKHvpQJf" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-blue-600 transition-transform transform hover:scale-110 relative group" aria-label="Bản đồ">
+            <a href="https://share.google/9hYxwQh28ds3LeLla" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-blue-600 transition-transform transform hover:scale-110 relative group" aria-label="Bản đồ">
                 <i class="fas fa-map-marker-alt"></i>
                 <span class="absolute left-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Bản đồ</span>
             </a>
@@ -189,7 +225,7 @@
                         <a href="tel:0812050090" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-white bg-gradient-to-r from-primary to-blue-600 hover:from-blue-600 hover:to-blue-700 ultra-shadow hover:shadow-xl transform hover:-translate-y-1 transition-all">
                             <i class="fas fa-phone-alt mr-2"></i> Gọi Đặt Xe Ngay
                         </a>
-                        <a href="https://share.google/2vIqj3FunzKHvpQJf" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center px-8 py-4 border-2 border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary text-base font-bold rounded-xl text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                        <a href="https://share.google/9hYxwQh28ds3LeLla" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center px-8 py-4 border-2 border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary text-base font-bold rounded-xl text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
                             <i class="fas fa-map-marked-alt mr-2 text-primary"></i> Chỉ Đường
                         </a>
                     </div>
@@ -347,7 +383,7 @@
                     </div>
                     <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700">
                         <div class="text-green-500 text-4xl mb-4"><i class="fas fa-leaf"></i></div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Xe Điện: Xu Hướng Xanh</h3>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Xe Điện: Xu Trào Xanh</h3>
                         <p class="text-gray-600 dark:text-gray-300">Nắm bắt xu hướng, Tân Tân cung cấp xe Vinfast. Xe được sạc đầy trước khi giao, đi kèm bộ sạc. Vận hành không tiếng ồn, không khói bụi.</p>
                     </div>
                 </div>
@@ -415,63 +451,109 @@
                 </div>
             </section>
 
-            <!-- Section 6: Experience (Alert Card) -->
+            <!-- Section 6: Experience -->
             <section id="experience" class="relative bg-gradient-to-r from-blue-600 to-primary rounded-3xl p-8 md:p-12 text-white ultra-shadow overflow-hidden">
-                <i class="fas fa-lightbulb absolute -right-10 -bottom-10 text-9xl text-white/20"></i>
+                <i class="fas fa-lightbulb absolute -right-10 -bottom-10 text-9xl text-white/20 pointer-events-none"></i>
                 <div class="relative z-10">
                     <h2 class="text-3xl font-extrabold mb-6 flex items-center gap-3">
                         <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center"><i class="fas fa-lightbulb text-yellow-300"></i></div> 
-                        6. Kinh Nghiệm Chọn Xe
+                        6. Kinh Nghiệm Chọn Xe & Đi Lại
                     </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
                             <h4 class="text-xl font-bold mb-3 text-yellow-300"><i class="fas fa-city mr-2"></i>Đi nội thành, Phố Cổ</h4>
-                            <p class="text-blue-100">Ưu tiên <strong>xe tay ga</strong> (Vision/Air Blade). Dễ đi khi tắc đường, không bẩn giày dép, cốp an toàn.</p>
+                            <p class="text-blue-100">Ưu tiên <strong>xe tay ga</strong> (Vision/Air Blade). Dễ đi khi tắc đường, không bẩn giày dép, cốp đồ an toàn.</p>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
                             <h4 class="text-xl font-bold mb-3 text-green-300"><i class="fas fa-mountain mr-2"></i>Đi ngoại thành, đèo dốc</h4>
                             <p class="text-blue-100">Bắt buộc chọn <strong>xe số</strong> (Wave/Sirius). Phanh số an toàn, gầm cao, không cháy chuông côn khi leo dốc.</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
+                            <h4 class="text-xl font-bold mb-3 text-pink-300"><i class="fas fa-user-shield mr-2"></i>Bạn nữ tay lái yếu</h4>
+                            <p class="text-blue-100">Nên chọn xe ga nhỏ gọn (Vision, Mio) dễ dắt, dễ chống chân và quay đầu linh hoạt trong ngõ hẹp.</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
+                            <h4 class="text-xl font-bold mb-3 text-orange-300"><i class="fas fa-search mr-2"></i>Lưu ý nhận giao xe</h4>
+                            <p class="text-blue-100">Dành 2 phút chụp ảnh/quay video xước xát cũ, test thử phanh, đèn, còi và lốp xe trước khi xuất phát.</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
+                            <h4 class="text-xl font-bold mb-3 text-purple-300"><i class="fas fa-route mr-2"></i>Lịch trình dài ngày</h4>
+                            <p class="text-blue-100">Nên báo trước lịch trình xa để cửa hàng chuẩn bị xe được bảo dưỡng kỹ nhất, máy êm và lốp mới cho bạn.</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-colors">
+                            <h4 class="text-xl font-bold mb-3 text-red-300"><i class="fas fa-parking mr-2"></i>Kinh nghiệm đỗ xe</h4>
+                            <p class="text-blue-100">Luôn khóa cổ xe cẩn thận. Khi vào Phố Cổ, chợ hay khu đông người bắt buộc phải gửi xe có vé mộc.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 7: Destinations -->
+            <!-- Section 7: Destinations (Nâng cấp Icon Cards) -->
             <section id="destinations">
                 <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8 border-l-4 border-primary pl-4">7. Địa Điểm Vi Vu Gợi Ý</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="group cursor-pointer rounded-2xl overflow-hidden ultra-shadow relative aspect-square">
-                        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Hồ Tây" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4">
-                            <h4 class="text-white font-bold text-lg mb-1">Hồ Tây</h4>
-                            <p class="text-gray-300 text-sm">Đạp xe hoàng hôn, ăn kem</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1: Hồ Tây -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/40 dark:to-blue-800/20 flex items-center justify-center text-blue-600 dark:text-blue-400 text-3xl mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 shadow-inner">
+                            <i class="fas fa-water"></i>
                         </div>
+                        <h4 class="font-bold text-xl text-gray-900 dark:text-white mb-3">Hồ Tây Lộng Gió</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">Đạp xe ngắm hoàng hôn rực rỡ, thưởng thức kem sen và hít thở không khí mát lành ven hồ.</p>
                     </div>
-                    <div class="group cursor-pointer rounded-2xl overflow-hidden ultra-shadow relative aspect-square">
-                        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Phố Cổ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4">
-                            <h4 class="text-white font-bold text-lg mb-1">Phố Cổ</h4>
-                            <p class="text-gray-300 text-sm">36 phố phường, cafe trứng</p>
+
+                    <!-- Card 2: Phố Cổ -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-orange-500/10 rounded-full blur-2xl group-hover:bg-orange-500/20 transition-all"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-100 to-orange-50 dark:from-orange-900/40 dark:to-orange-800/20 flex items-center justify-center text-orange-600 dark:text-orange-400 text-3xl mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 shadow-inner">
+                            <i class="fas fa-city"></i>
                         </div>
+                        <h4 class="font-bold text-xl text-gray-900 dark:text-white mb-3">Khu Phố Cổ</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">Len lỏi 36 phố phường nhộn nhịp, nhâm nhi ly cafe trứng trứ danh và khám phá nét ẩm thực độc đáo.</p>
                     </div>
-                    <div class="group cursor-pointer rounded-2xl overflow-hidden ultra-shadow relative aspect-square">
-                        <div class="w-full h-full bg-gray-800 flex items-center justify-center text-6xl text-gray-600"><i class="fas fa-archway"></i></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4">
-                            <h4 class="text-white font-bold text-lg mb-1">Lăng Bác</h4>
-                            <p class="text-gray-300 text-sm">Khu trung tâm, đường rộng</p>
+
+                    <!-- Card 3: Lăng Bác -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-red-500/10 rounded-full blur-2xl group-hover:bg-red-500/20 transition-all"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-100 to-red-50 dark:from-red-900/40 dark:to-red-800/20 flex items-center justify-center text-red-600 dark:text-red-400 text-3xl mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 shadow-inner">
+                            <i class="fas fa-landmark"></i>
                         </div>
+                        <h4 class="font-bold text-xl text-gray-900 dark:text-white mb-3">Quảng Trường Ba Đình</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">Không gian trang nghiêm, rộng lớn ngay trung tâm thủ đô. Đừng bỏ lỡ nghi lễ thượng cờ buổi sáng sớm.</p>
                     </div>
-                    <div class="group cursor-pointer rounded-2xl overflow-hidden ultra-shadow relative aspect-square">
-                        <div class="w-full h-full bg-gray-800 flex items-center justify-center text-6xl text-gray-600"><i class="fas fa-bridge"></i></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4">
-                            <h4 class="text-white font-bold text-lg mb-1">Cầu Long Biên</h4>
-                            <p class="text-gray-300 text-sm">Chứng nhân lịch sử</p>
+
+                    <!-- Card 4: Cầu Long Biên -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-100 to-indigo-50 dark:from-indigo-900/40 dark:to-indigo-800/20 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-3xl mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 shadow-inner">
+                            <i class="fas fa-archway"></i>
                         </div>
+                        <h4 class="font-bold text-xl text-gray-900 dark:text-white mb-3">Cầu Long Biên</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">Check-in chứng nhân lịch sử cổ kính, đi dạo hóng gió và ngắm nhìn bãi bồi sông Hồng bình yên, tĩnh lặng.</p>
                     </div>
+
+                    <!-- Card 5: Bát Tràng -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-pink-500/10 rounded-full blur-2xl group-hover:bg-pink-500/20 transition-all"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50 dark:from-pink-900/40 dark:to-pink-800/20 flex items-center justify-center text-pink-600 dark:text-pink-400 text-3xl mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 shadow-inner">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4 class="font-bold text-xl text-gray-900 dark:text-white mb-3">Làng Gốm Bát Tràng</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">Khám phá nghệ thuật làm gốm truyền thống lâu đời, tự tay vuốt nặn những tác phẩm kỷ niệm mang về.</p>
+                    </div>
+
+                    <!-- Card 6: Ba Vì -->
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl ultra-shadow border border-gray-100 dark:border-gray-700 hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-green-500/10 rounded-full blur-2xl group-hover:bg-green-500/20 transition-all"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-100 to-green-50 dark:from-green-900/40 dark:to-green-800/20 flex items-center justify-center text-green-600 dark:text-green-400 text-3xl mb-6 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300 shadow-inner">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h4 class="font-bold text-xl text-gray-900 dark:text-white mb-3">Vườn Quốc Gia Ba Vì</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">Thỏa sức phượt trên những cung đường đồi núi quanh co, cắm trại dã ngoại cuối tuần giữa thiên nhiên hùng vĩ.</p>
+                    </div>
+
                 </div>
             </section>
 
@@ -602,7 +684,7 @@
                             <a href="tel:0812050090" class="flex-1 bg-primary hover:bg-blue-600 text-center font-bold py-4 rounded-xl transition-colors">
                                 <i class="fas fa-phone-alt mr-2"></i> Gọi Điện
                             </a>
-                            <a href="https://share.google/2vIqj3FunzKHvpQJf" target="_blank" class="flex-1 bg-white text-gray-900 hover:bg-gray-200 text-center font-bold py-4 rounded-xl transition-colors">
+                            <a href="https://share.google/9hYxwQh28ds3LeLla" target="_blank" class="flex-1 bg-white text-gray-900 hover:bg-gray-200 text-center font-bold py-4 rounded-xl transition-colors">
                                 <i class="fas fa-map mr-2 text-primary"></i> Bản Đồ
                             </a>
                         </div>
@@ -616,7 +698,7 @@
                             </div>
                             <h3 class="text-2xl font-bold mb-2 shadow-sm">Tân Tân Motorbike</h3>
                             <p class="text-gray-200 mb-6 max-w-sm">Chạm vào nút bên dưới để mở điều hướng Google Maps trực tiếp đến cửa hàng chúng tôi.</p>
-                            <a href="https://share.google/2vIqj3FunzKHvpQJf" target="_blank" class="bg-gray-900/80 backdrop-blur border border-white/20 hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded-full transition-all">Mở Ứng Dụng Maps</a>
+                            <a href="https://share.google/9hYxwQh28ds3LeLla" target="_blank" class="bg-gray-900/80 backdrop-blur border border-white/20 hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded-full transition-all">Mở Ứng Dụng Maps</a>
                         </div>
                     </div>
                 </div>
