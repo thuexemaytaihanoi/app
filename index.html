@@ -99,7 +99,8 @@
                     <i class="fas fa-bars text-xl"></i>
                 </button>
                 <a href="#" class="font-bold text-xl tracking-tight text-primary flex items-center gap-2">
-                    <i class="fas fa-motorcycle"></i> Tân Tân
+                    <img src="https://raw.githubusercontent.com/thuexemaytaihanoi/app/refs/heads/main/IMG_1294.png" alt="Logo Tân Tân" class="h-10 w-10 object-cover rounded-full shadow-sm border border-gray-200">
+                    Tân Tân
                 </a>
             </div>
             <div class="flex items-center gap-4">
@@ -117,7 +118,10 @@
     <div id="sidebarOverlay" class="fixed inset-0 bg-black/50 z-40 hidden transition-opacity opacity-0" aria-hidden="true"></div>
     <aside id="sidebar" class="fixed top-0 left-0 w-72 h-full bg-white dark:bg-gray-800 shadow-2xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto" role="dialog" aria-modal="true" aria-label="Menu chính">
         <div class="p-4 flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
-            <h2 class="font-bold text-lg"><i class="fas fa-motorcycle text-primary"></i> Menu Tân Tân</h2>
+            <h2 class="font-bold text-lg flex items-center gap-2">
+                <img src="https://raw.githubusercontent.com/thuexemaytaihanoi/app/refs/heads/main/IMG_1294.png" alt="Logo" class="h-8 w-8 object-cover rounded-full">
+                Menu Tân Tân
+            </h2>
             <button type="button" id="closeSidebar" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none" aria-label="Đóng menu">
                 <i class="fas fa-times text-xl"></i>
             </button>
@@ -321,21 +325,63 @@
             <!-- Section 9 -->
             <section id="reviews" class="prose prose-lg dark:prose-invert max-w-none">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white border-l-4 border-primary pl-4 mb-6">9. Đánh Giá Từ Khách Hàng Đã Trải Nghiệm</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 not-prose">
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700">
-                        <div class="flex text-yellow-400 mb-3">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 not-prose">
+                    
+                    <!-- Đánh giá 1 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic">"Mình từ Sài Gòn ra công tác, thuê chiếc Air Blade bên anh Tân. Xe chạy rất bốc, máy êm. Thái độ phục vụ nhiệt tình, giao xe tận nơi cho mình ở khách sạn quận Hoàn Kiếm nhanh chóng. Chắc chắn sẽ ủng hộ vào lần sau."</p>
                         </div>
-                        <p class="text-gray-600 dark:text-gray-300 italic">"Mình từ Sài Gòn ra công tác, thuê chiếc Air Blade bên anh Tân. Xe chạy rất bốc, máy êm. Thái độ phục vụ nhiệt tình, giao xe tận nơi cho mình ở khách sạn quận Hoàn Kiếm nhanh chóng. Chắc chắn sẽ ủng hộ vào lần sau."</p>
                         <p class="mt-4 font-bold text-gray-900 dark:text-white">- Anh Hoàng Phúc</p>
                     </div>
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700">
-                        <div class="flex text-yellow-400 mb-3">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                    <!-- Đánh giá 2 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic">"Cửa hàng dễ tìm, ngay đầu ngõ 9 Thanh Niên. Bọn mình sinh viên được chị chủ ưu đãi không cần cọc tiền, thủ tục chỉ đưa thẻ sinh viên. Mượn chiếc Wave lượn lờ chán chê đổ có 50k tiền xăng. Quá tuyệt vời!"</p>
                         </div>
-                        <p class="text-gray-600 dark:text-gray-300 italic">"Cửa hàng dễ tìm, ngay đầu ngõ 9 Thanh Niên. Bọn mình sinh viên được chị chủ ưu đãi không cần cọc tiền, thủ tục chỉ đưa thẻ sinh viên. Mượn chiếc Wave lượn lờ chán chê đổ có 50k tiền xăng. Quá tuyệt vời!"</p>
                         <p class="mt-4 font-bold text-gray-900 dark:text-white">- Bạn Linh Chi</p>
                     </div>
+
+                    <!-- Đánh giá 3 (Mới thêm) -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic">"Dịch vụ giao xe tận nơi rất tiện lợi. Mình ở ngay khách sạn phố cổ, gọi 15 phút sau anh chủ đã mang xe tới. Xe được bảo dưỡng tốt, đi Tam Đảo 2 ngày đường dốc mà không gặp vấn đề gì."</p>
+                        </div>
+                        <p class="mt-4 font-bold text-gray-900 dark:text-white">- Anh Tuấn Anh</p>
+                    </div>
+
+                    <!-- Đánh giá 4 (Mới thêm) -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic">"Thuê xe máy ở Tân Tân rẻ mà chất lượng. Mình thuê chiếc Vision xe mới lắm, đi êm ru. Lúc trả xe được hỗ trợ nhiệt tình, không làm khó dễ. Vote 5 sao nhé!"</p>
+                        </div>
+                        <p class="mt-4 font-bold text-gray-900 dark:text-white">- Chị Ngọc Mai</p>
+                    </div>
+
+                    <!-- Đánh giá 5 (Mới thêm) -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow border border-gray-100 dark:border-gray-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic">"Lần đầu ra Hà Nội du lịch, may mà tìm được chỗ thuê xe uy tín. Xe ngon, chủ quán thân thiện lại còn gợi ý cho mình mấy quán phở ngon quanh Hoàn Kiếm nữa. Cực kỳ recommend cho mọi người!"</p>
+                        </div>
+                        <p class="mt-4 font-bold text-gray-900 dark:text-white">- Bạn Quốc Bảo</p>
+                    </div>
+
                 </div>
             </section>
 
@@ -429,6 +475,11 @@
                         <li class="flex items-start gap-3">
                             <i class="fas fa-envelope mt-1 text-primary"></i>
                             <a href="mailto:lannguyen1102vn@gmail.com" class="text-gray-400 hover:text-white transition">lannguyen1102vn@gmail.com</a>
+                        </li>
+                        <!-- Thêm giờ mở cửa vào Footer -->
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-clock mt-1 text-primary"></i>
+                            <span class="text-gray-400">Thời gian mở cửa: 9h - 21h</span>
                         </li>
                     </ul>
                 </div>
